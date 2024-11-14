@@ -23,3 +23,70 @@ a{
     cursor: pointer;
 
 }
+
+
+.hero{
+    background-color: burlywood;
+    height: 80vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+
+    
+    /* border: 1px solid black; */
+}
+
+.descripcion{
+    
+}
+
+.descripcion h1{
+    text-align: center;
+    padding: 30px 10px 30px 10px;
+    font-size: 52px;
+}
+
+.descripcion p{
+    font-size: 20px;
+    padding:  0 0 30px 0;
+   
+    
+}
+
+.descripcion button{
+    
+   
+}
+
+.contenedorboton{
+    display: flex;
+    justify-content: center;
+}
+
+.altura{
+    height: 35vh;
+}
+
+.acerca{
+    background-color: cadetblue;
+
+}
+
+.acerca h2{
+    text-align: center;
+    padding: 80px 0 40px 0;
+    font-size: 40px;
+}
+.contenedortexto{
+    display: flex;
+}
+
+.conimagen{
+    display: flex;
+    align-items: center;
+    background-color: chocolate;
+}
+
+.tituloytexto{
+    text-align: center;
+}
