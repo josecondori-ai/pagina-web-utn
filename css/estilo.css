@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* este es el css del <nav>*/
+.menu{
+    background-color: #f3eed9;
+    height:5vh ;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    align-items: center;
+}
+
+/* este es el fin css del <nav>*/
+
+
+a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
