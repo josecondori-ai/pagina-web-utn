@@ -1,11 +1,35 @@
+
+:root{
+    --color-primario:#b300ff;
+    --color-fondo:#f9f9f9;
+    --color-texto:#333;
+    --color-secundario:#333;
+
+    --texto-sutitulo:26px
+
+    --color-secundario-hover:#555;
+    --color-primario-hover:#0056b3;
+
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 25px;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+header{
+    background-color:var(--color-secundario)
+}
+
 /* este es el css del <nav>*/
 .menu{
-    background-color: #f3eed9;
     height:5vh ;
     display: flex;
     justify-content: space-around;
@@ -18,22 +42,33 @@
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
     text-transform: uppercase;
     cursor: pointer;
 
 }
 
+a:hover{
+    background-color:var(--color-secundario-hover) ;
+    border-radius: 5px;
+}
+
 
 .hero{
-    background-color: burlywood;
     height: 80vh;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
+    padding: 32px;
+    background-color: var(--color-fondo);
+
     align-items: center;
 
     
     /* border: 1px solid black; */
+}
+.hero img{
+    width: 100%;
+    border-radius: 5px;
 }
 
 .descripcion{
@@ -54,8 +89,24 @@ a{
 }
 
 .descripcion button{
-    
+    /* padding: 16px 32px 16px 32px; */
+    padding: 16px 32px ;
+    font-size: 18px;
+    color: white;
+    background-color: var(--color-primario);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s,background-color 0.3s,box-shadow 0.3s;
+    /* transition: all 0.3; */
    
+}
+
+.descripcion button:hover{
+    background-color: var(--color-primario-hover);
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    
 }
 
 .contenedorboton{
@@ -68,8 +119,7 @@ a{
 }
 
 .acerca{
-    background-color: cadetblue;
-
+ background-color: var(--color-primario);
 }
 
 .acerca h2{
@@ -84,9 +134,13 @@ a{
 .conimagen{
     display: flex;
     align-items: center;
-    background-color: chocolate;
 }
 
 .tituloytexto{
     text-align: center;
+}
+
+.otrofondo{
+    background-color: var(--color-primario);
+
 }
